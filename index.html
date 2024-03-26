@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, rgb(3, 77, 58) 50%, rgb(9, 42, 70) 50%);
+    }
+
+    .form-container {
+      background-color: transparent;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      width: 350px;
+      text-align: center;
+    }
+
+    .form-header {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .input-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      overflow: hidden;
+      border: 1px solid black;
+    }
+
+    .icon {
+      margin-right: 10px;
+      color: white;
+      z-index: 1;
+    }
+
+    .user-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 10px;
+      background: transparent;
+      color: white;
+      z-index: 1;
+    }
+
+    .login-button {
+      background-color: white;
+      color: navy;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      cursor: pointer;
+    }
+  </style>
+  <title>User Login</title>
+</head>
+
+<body>
+  <div class="form-container">
+    <div class="form-header">Log In</div>
+    <div class="input-container">
+      <span class="icon">👤</span>
+      <input class="user-input" type="text" placeholder="Username">
+    </div>
+    <div class="input-container">
+      <input class="user-input" type="password" placeholder="Password">
+      <span class="icon lock-icon">🔒</span>
+    </div>
+    <button class="login-button">Login</button>
+  </div>
+</body>
+
+</html>
